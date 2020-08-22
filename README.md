@@ -1,2 +1,3 @@
 # Natours
- Landing page, HTML/CSS practice
+
+Landing page, HTML/CSS practice
