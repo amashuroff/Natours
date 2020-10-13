@@ -7,7 +7,9 @@ Breakpoint arg choices
 
 1 em = 16px;
 */
-.btn, .btn:link, .btn:visited {
+.btn,
+.btn:link,
+.btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -23,23 +25,24 @@ Breakpoint arg choices
 
 .btn:hover {
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
   -webkit-box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover::after {
   -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
+  transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
 
-.btn:active, .btn:focus {
+.btn:active,
+.btn:focus {
   outline: none;
   -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn::after {
@@ -75,12 +78,13 @@ Breakpoint arg choices
 
 .btn--animated {
   -webkit-animation: moveInBottom 0.5s ease-out 0.5s;
-          animation: moveInBottom 0.5s ease-out 0.5s;
+  animation: moveInBottom 0.5s ease-out 0.5s;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
-.btn-text:link, .btn-text:visited {
+.btn-text:link,
+.btn-text:visited {
   font-size: 1.6rem;
   color: #55c57a;
   display: inline-block;
@@ -93,14 +97,14 @@ Breakpoint arg choices
   background-color: #55c57a;
   color: #fff;
   -webkit-box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn-text:active {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  transform: translateY(2px);
 }
 
 .composition {
@@ -110,12 +114,12 @@ Breakpoint arg choices
 .composition__photo {
   width: 55%;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   border-radius: 2px;
   position: absolute;
   z-index: 10;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   outline-offset: 2rem;
 }
 
@@ -125,7 +129,7 @@ Breakpoint arg choices
     position: relative;
     width: 33.3333%;
     -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -138,7 +142,7 @@ Breakpoint arg choices
   .composition__photo--p1 {
     top: 1rem;
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 
@@ -151,7 +155,7 @@ Breakpoint arg choices
   .composition__photo--p2 {
     top: -1rem;
     -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
     z-index: 100;
   }
 }
@@ -166,22 +170,22 @@ Breakpoint arg choices
     top: 1rem;
     left: 0;
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
 .composition__photo:hover {
   outline: 15px solid #55c57a;
   -webkit-transform: scale(1.05) translateY(-0.5rem);
-          transform: scale(1.05) translateY(-0.5rem);
+  transform: scale(1.05) translateY(-0.5rem);
   -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
 }
 
 .composition:hover .composition__photo:not(:hover) {
   -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .feature-box {
@@ -191,11 +195,11 @@ Breakpoint arg choices
   text-align: center;
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -206,10 +210,16 @@ Breakpoint arg choices
 
 .feature-box__icon {
   font-size: 6rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   display: inline-block;
   padding: 2px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7ed56f),
+    to(#28b485)
+  );
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   background-clip: text;
@@ -224,12 +234,12 @@ Breakpoint arg choices
 
 .feature-box:hover {
   -webkit-transform: translateY(-1.5rem) scale(1.05);
-          transform: translateY(-1.5rem) scale(1.05);
+  transform: translateY(-1.5rem) scale(1.05);
 }
 
 .card {
   -webkit-perspective: 1500rem;
-          perspective: 1500rem;
+  perspective: 1500rem;
   -moz-perspective: 150rem;
   position: relative;
   height: 50rem;
@@ -239,8 +249,8 @@ Breakpoint arg choices
   background-color: #fff;
   font-size: 2rem;
   height: 50rem;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -251,7 +261,7 @@ Breakpoint arg choices
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
 }
 
 .card__side--front {
@@ -260,32 +270,50 @@ Breakpoint arg choices
 
 .card__side--back {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card__side--back-1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#ffb900),
+    to(#ff7730)
+  );
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
 
 .card__side--back-2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#7ed56f),
+    to(#28b485)
+  );
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 
 .card__side--back-3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#2998ff),
+    to(#5643fa)
+  );
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 
 .card:hover .card__side--front {
   -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 .card:hover .card__side--back {
   -webkit-transform: rotateY(0);
-          transform: rotateY(0);
+  transform: rotateY(0);
 }
 
 .card__image {
@@ -293,24 +321,48 @@ Breakpoint arg choices
   height: 23rem;
   background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   border-radius: 3px;
   overflow: hidden;
 }
 
 .card__image--1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), url("/img/nat-5.jpg");
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/img/nat-5.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(#ffb900),
+      to(#ff7730)
+    ),
+    url("../img/nat-5.jpg");
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+    url("../img/nat-5.jpg");
 }
 
 .card__image--2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485)), url("/img/nat-6.jpg");
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/img/nat-6.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(#7ed56f),
+      to(#28b485)
+    ),
+    url("../img/nat-6.jpg");
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+    url("../img/nat-6.jpg");
 }
 
 .card__image--3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), url("/img/nat-7.jpg");
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("/img/nat-7.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(#2998ff),
+      to(#5643fa)
+    ),
+    url("../img/nat-7.jpg");
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+    url("../img/nat-7.jpg");
 }
 
 .card__heading {
@@ -332,18 +384,48 @@ Breakpoint arg choices
 }
 
 .card__heading-span--1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.85)), to(rgba(255, 119, 48, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba(255, 185, 0, 0.85)),
+    to(rgba(255, 119, 48, 0.85))
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 185, 0, 0.85),
+    rgba(255, 119, 48, 0.85)
+  );
 }
 
 .card__heading-span--2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.85)), to(rgba(40, 180, 133, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba(126, 213, 111, 0.85)),
+    to(rgba(40, 180, 133, 0.85))
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(126, 213, 111, 0.85),
+    rgba(40, 180, 133, 0.85)
+  );
 }
 
 .card__heading-span--3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.85)), to(rgba(86, 67, 250, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba(41, 152, 255, 0.85)),
+    to(rgba(86, 67, 250, 0.85))
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(41, 152, 255, 0.85),
+    rgba(86, 67, 250, 0.85)
+  );
 }
 
 .card__details {
@@ -371,7 +453,7 @@ Breakpoint arg choices
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 95%;
   text-align: center;
 }
@@ -391,7 +473,7 @@ Breakpoint arg choices
 @media only screen and (max-width: 37.5em), only screen and (hover: none) {
   .card {
     -webkit-box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
-            box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
     height: auto;
     background-color: #fff;
   }
@@ -399,27 +481,27 @@ Breakpoint arg choices
     height: auto;
     position: relative;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .card__side--back {
     -webkit-transform: rotateY(0);
-            transform: rotateY(0);
+    transform: rotateY(0);
     -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   }
   .card__details {
     padding: 1rem 3rem;
   }
   .card:hover .card__side--front {
     -webkit-transform: rotateY(0);
-            transform: rotateY(0);
+    transform: rotateY(0);
   }
   .card__cta {
     position: relative;
     top: 0;
     left: 0;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
     width: 100%;
     padding: 7rem 4rem 4rem 4rem;
   }
@@ -435,14 +517,14 @@ Breakpoint arg choices
   width: 75%;
   margin: 0 auto;
   -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 6rem;
   font-size: 1.6rem;
   padding-left: 9rem;
   -webkit-transform: skewX(-12deg);
-          transform: skewX(-12deg);
+  transform: skewX(-12deg);
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -455,19 +537,19 @@ Breakpoint arg choices
 @media only screen and (max-width: 56.25em) {
   .story {
     -webkit-transform: skewX(0);
-            transform: skewX(0);
+    transform: skewX(0);
   }
 }
 
 .story__text {
   -webkit-transform: skewX(12deg);
-          transform: skewX(12deg);
+  transform: skewX(12deg);
 }
 
 @media only screen and (max-width: 56.25em) {
   .story__text {
     -webkit-transform: skewX(0);
-            transform: skewX(0);
+    transform: skewX(0);
   }
 }
 
@@ -476,7 +558,7 @@ Breakpoint arg choices
   width: 15rem;
   float: left;
   -webkit-transform: translateX(-3rem) skewX(12deg);
-          transform: translateX(-3rem) skewX(12deg);
+  transform: translateX(-3rem) skewX(12deg);
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -495,18 +577,18 @@ Breakpoint arg choices
 @media only screen and (max-width: 56.25em) {
   .story__shape {
     -webkit-transform: translateX(-3rem) skewX(0);
-            transform: translateX(-3rem) skewX(0);
+    transform: translateX(-3rem) skewX(0);
   }
 }
 
 .story__image {
   height: 100%;
   -webkit-transform: translateX(-4rem) scale(1.4);
-          transform: translateX(-4rem) scale(1.4);
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transform: translateX(-4rem) scale(1.4);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .story__caption {
@@ -514,29 +596,29 @@ Breakpoint arg choices
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, 20%);
-          transform: translate(-50%, 20%);
+  transform: translate(-50%, 20%);
   color: #fff;
   text-transform: uppercase;
   font-size: 1.7rem;
   text-align: center;
   opacity: 0;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .story:hover .story__caption {
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 1;
 }
 
 .story:hover .story__image {
   -webkit-transform: translateX(-4rem) scale(1);
-          transform: translateX(-4rem) scale(1);
+  transform: translateX(-4rem) scale(1);
   -webkit-filter: blur(3px) brightness(80%);
-          filter: blur(3px) brightness(80%);
+  filter: blur(3px) brightness(80%);
 }
 
 .bg-video {
@@ -546,7 +628,7 @@ Breakpoint arg choices
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .15;
+  opacity: 0.15;
   overflow: hidden;
 }
 
@@ -554,7 +636,7 @@ Breakpoint arg choices
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .form {
@@ -576,8 +658,8 @@ Breakpoint arg choices
   border-bottom: 3px solid transparent;
   width: 90%;
   display: block;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -589,7 +671,7 @@ Breakpoint arg choices
 .form__input:focus {
   outline: none;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #55c57a;
 }
 
@@ -605,17 +687,17 @@ Breakpoint arg choices
   font-size: 1.2rem;
   font-weight: 700;
   margin-left: 2rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   display: block;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-4rem);
-          transform: translateY(-4rem);
+  transform: translateY(-4rem);
 }
 
 .form__radio-group {
@@ -657,7 +739,7 @@ Breakpoint arg choices
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   content: "";
   width: 1.5rem;
   height: 1.5rem;
@@ -680,8 +762,8 @@ Breakpoint arg choices
   z-index: 5000;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @supports (-webkit-backdrop-filter: blur(10px)) {
@@ -696,18 +778,18 @@ Breakpoint arg choices
   width: 75%;
   background-color: #fff;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0.5);
-          transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
   border-radius: 3px;
   display: table;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: all .3s .3s;
-  transition: all .3s .3s;
+  -webkit-transition: all 0.3s 0.3s;
+  transition: all 0.3s 0.3s;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -717,8 +799,8 @@ Breakpoint arg choices
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 
@@ -765,11 +847,11 @@ Breakpoint arg choices
 .popup__text {
   font-size-adjust: 1.4rem;
   -webkit-column-count: 2;
-          column-count: 2;
+  column-count: 2;
   -webkit-column-gap: 4rem;
-          column-gap: 4rem;
+  column-gap: 4rem;
   -webkit-column-rule: 1px solid rgba(51, 51, 51, 0.2);
-          column-rule: 1px solid rgba(51, 51, 51, 0.2);
+  column-rule: 1px solid rgba(51, 51, 51, 0.2);
   -moz-column-count: 2;
   -moz-column-gap: 4rem;
   -moz-column-rule: 1px solid rgba(51, 51, 51, 0.2);
@@ -787,10 +869,11 @@ Breakpoint arg choices
 .popup:target .popup__content {
   opacity: 1;
   -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
-.popup__close:link, .popup__close:visited {
+.popup__close:link,
+.popup__close:visited {
   text-decoration: none;
   color: #777;
   position: absolute;
@@ -798,8 +881,8 @@ Breakpoint arg choices
   right: 2.5rem;
   font-size: 3rem;
   display: inline-block;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .popup__close:hover {
@@ -820,7 +903,7 @@ Breakpoint arg choices
   right: 6rem;
   z-index: 1002;
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer;
 }
@@ -848,10 +931,12 @@ Breakpoint arg choices
   top: 7rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
-  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.09, 0.69, 0.57, 1.03);
+  -webkit-transition: -webkit-transform 0.8s
+    cubic-bezier(0.09, 0.69, 0.57, 1.03);
   transition: -webkit-transform 0.8s cubic-bezier(0.09, 0.69, 0.57, 1.03);
   transition: transform 0.8s cubic-bezier(0.09, 0.69, 0.57, 1.03);
-  transition: transform 0.8s cubic-bezier(0.09, 0.69, 0.57, 1.03), -webkit-transform 0.8s cubic-bezier(0.09, 0.69, 0.57, 1.03);
+  transition: transform 0.8s cubic-bezier(0.09, 0.69, 0.57, 1.03),
+    -webkit-transform 0.8s cubic-bezier(0.09, 0.69, 0.57, 1.03);
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -876,8 +961,8 @@ Breakpoint arg choices
   z-index: 1001;
   width: 0;
   opacity: 0;
-  -webkit-transition: opacity .8s;
-  transition: opacity .8s;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
 }
 
 .navigation__list {
@@ -885,13 +970,14 @@ Breakpoint arg choices
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
   width: 100%;
 }
 
-.navigation__link:link, .navigation__link:visited {
+.navigation__link:link,
+.navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -900,29 +986,36 @@ Breakpoint arg choices
   text-decoration: none;
   text-transform: uppercase;
   padding-top: 1rem;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #fff 50%
+  );
   background-size: 230%;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.navigation__link:link span, .navigation__link:visited span {
+.navigation__link:link span,
+.navigation__link:visited span {
   margin-right: 1rem;
   display: inline-block;
 }
 
-.navigation__link:hover, .navigation__link:active {
+.navigation__link:hover,
+.navigation__link:active {
   background-position: 100%;
   color: #55c57a;
   -webkit-transform: translateX(1rem);
-          transform: translateX(1rem);
+  transform: translateX(1rem);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
   -webkit-transform: scale(80);
-          transform: scale(80);
+  transform: scale(80);
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
@@ -935,27 +1028,30 @@ Breakpoint arg choices
   margin-top: 3.5rem;
 }
 
-.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
   width: 3rem;
   height: 3px;
   background-color: #333;
   display: inline-block;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.navigation__icon::after, .navigation__icon::before {
+.navigation__icon::after,
+.navigation__icon::before {
   content: "";
   position: absolute;
   left: 0;
 }
 
 .navigation__icon::before {
-  top: -.8rem;
+  top: -0.8rem;
 }
 
 .navigation__icon::after {
-  top: .8rem;
+  top: 0.8rem;
 }
 
 .navigation__button:hover .navigation__icon::before {
@@ -972,21 +1068,33 @@ Breakpoint arg choices
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
   top: 0;
 }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  transform: rotate(-135deg);
   top: 0;
 }
 
 .header {
   position: relative;
   height: 85vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero-small.jpg);
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(126, 213, 111, 0.8)),
+      to(rgba(40, 180, 133, 0.8))
+    ),
+    url(../img/hero-small.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.8)
+    ),
+    url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
 }
@@ -999,10 +1107,24 @@ Breakpoint arg choices
   }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 125em) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
   .header {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        from(rgba(126, 213, 111, 0.8)),
+        to(rgba(40, 180, 133, 0.8))
+      ),
+      url(../img/hero.jpg);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.8),
+        rgba(40, 180, 133, 0.8)
+      ),
+      url(../img/hero.jpg);
   }
 }
 
@@ -1028,7 +1150,7 @@ Breakpoint arg choices
   top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -1160,22 +1282,24 @@ Breakpoint arg choices
   margin-right: 1.5rem;
 }
 
-.footer__link:link, .footer__link:visited {
+.footer__link:link,
+.footer__link:visited {
   color: #f7f7f7;
   background-color: #333;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.footer__link:hover, .footer__link:active {
+.footer__link:hover,
+.footer__link:active {
   color: #55c57a;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
   -webkit-transform: rotate(-5deg) scale(1.3);
-          transform: rotate(-5deg) scale(1.3);
+  transform: rotate(-5deg) scale(1.3);
 }
 
 .footer__copyright {
@@ -1206,17 +1330,29 @@ Breakpoint arg choices
 
 .section-features {
   padding: 20rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/nat-4.jpg);
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(126, 213, 111, 0.8)),
+      to(rgba(40, 180, 133, 0.8))
+    ),
+    url(../img/nat-4.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.8)
+    ),
+    url(../img/nat-4.jpg);
   background-size: cover;
   margin-top: -10rem;
   -webkit-transform: skewY(-7deg);
-          transform: skewY(-7deg);
+  transform: skewY(-7deg);
 }
 
 .section-features > * {
   -webkit-transform: skewY(7deg);
-          transform: skewY(7deg);
+  transform: skewY(7deg);
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1250,28 +1386,58 @@ Breakpoint arg choices
 
 .section-book {
   padding: 15rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#7ed56f),
+    to(#28b485)
+  );
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("/img/nat-10.jpg");
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 50%
+    ),
+    url("/img/nat-10.jpg");
   background-size: cover;
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
 @media only screen and (max-width: 75em) {
   .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url("/img/nat-10.jpg");
+    background-image: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 65%,
+        transparent 65%
+      ),
+      url("/img/nat-10.jpg");
   }
 }
 
 @media only screen and (max-width: 56.25em) {
   .book {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url("/img/nat-10.jpg");
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("/img/nat-10.jpg");
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(255, 255, 255, 0.9)),
+        to(rgba(255, 255, 255, 0.9))
+      ),
+      url("/img/nat-10.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 100%
+      ),
+      url("/img/nat-10.jpg");
   }
 }
 
@@ -1298,7 +1464,7 @@ Breakpoint arg choices
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -1326,7 +1492,7 @@ html {
 body {
   padding: 3rem;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1349,16 +1515,16 @@ body {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-10rem);
-            transform: translateX(-10rem);
+    transform: translateX(-10rem);
   }
   80% {
     -webkit-transform: translateX(1rem);
-            transform: translateX(1rem);
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -1366,16 +1532,16 @@ body {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-10rem);
-            transform: translateX(-10rem);
+    transform: translateX(-10rem);
   }
   80% {
     -webkit-transform: translateX(1rem);
-            transform: translateX(1rem);
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -1383,16 +1549,16 @@ body {
   0% {
     opacity: 0;
     -webkit-transform: translateX(10rem);
-            transform: translateX(10rem);
+    transform: translateX(10rem);
   }
   80% {
     -webkit-transform: translateX(-1rem);
-            transform: translateX(-1rem);
+    transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -1400,16 +1566,16 @@ body {
   0% {
     opacity: 0;
     -webkit-transform: translateX(10rem);
-            transform: translateX(10rem);
+    transform: translateX(10rem);
   }
   80% {
     -webkit-transform: translateX(-1rem);
-            transform: translateX(-1rem);
+    transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -1417,12 +1583,12 @@ body {
   0% {
     opacity: 0;
     -webkit-transform: translateY(10rem);
-            transform: translateY(10rem);
+    transform: translateY(10rem);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -1430,12 +1596,12 @@ body {
   0% {
     opacity: 0;
     -webkit-transform: translateY(10rem);
-            transform: translateY(10rem);
+    transform: translateY(10rem);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -1459,9 +1625,9 @@ body {
   font-size: 6rem;
   letter-spacing: 35px;
   -webkit-animation: moveInLeft 1s;
-          animation: moveInLeft 1s;
+  animation: moveInLeft 1s;
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1478,15 +1644,15 @@ body {
   font-weight: 700;
   letter-spacing: 1.75rem;
   -webkit-animation: moveInRight 1s;
-          animation: moveInRight 1s;
+  animation: moveInRight 1s;
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: 37.5em) {
   .heading-primary--sub {
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
   }
 }
 
@@ -1494,20 +1660,26 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7ed56f),
+    to(#28b485)
+  );
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   background-clip: text;
   display: inline-block;
   color: transparent;
   letter-spacing: 2px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .heading-secondary:hover {
   -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
-          transform: skewY(2deg) skewX(15deg) scale(1.1);
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 20px rgba(0, 0, 0, 0.2);
 }
 
