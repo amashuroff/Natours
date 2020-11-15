@@ -1,5 +1,8 @@
 # Natours
 
-Landing page, HTML/CSS practice
+Landing page:
+
+- SCSS
+- Animations, flexbox, floats, grids
 
 See: https://amashuroff.github.io/Natours-practice/
